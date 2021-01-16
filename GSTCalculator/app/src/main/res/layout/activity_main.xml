@@ -1,0 +1,258 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:isScrollContainer="true"
+        tools:context=".MainActivity">
+
+        <ImageView
+            android:id="@+id/imageView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="16dp"
+            android:background="#FFFFFF"
+            app:layout_constraintBottom_toBottomOf="@+id/textView"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="@+id/textView"
+            app:srcCompat="@drawable/ic_baseline_category_24" />
+
+        <TextView
+            android:id="@+id/textView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="16dp"
+            android:layout_marginTop="16dp"
+            android:fontFamily="@font/open_sans"
+            android:text="@string/taxCategory"
+            app:layout_constraintStart_toEndOf="@+id/imageView"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <RadioGroup
+            android:id="@+id/taxOptions"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            app:layout_constraintStart_toStartOf="@+id/textView"
+            app:layout_constraintTop_toBottomOf="@+id/textView">
+
+            <RadioButton
+                android:id="@+id/r_0.25"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:buttonTint="@color/purple_500"
+                android:fontFamily="@font/open_sans"
+                android:text="@string/radioText1" />
+
+            <RadioButton
+                android:id="@+id/r_5"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:buttonTint="@color/purple_500"
+                android:fontFamily="@font/open_sans"
+                android:text="@string/radioText2" />
+
+            <RadioButton
+                android:id="@+id/r_12"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:buttonTint="@color/purple_500"
+                android:fontFamily="@font/open_sans"
+                android:text="@string/radioText3" />
+
+            <RadioButton
+                android:id="@+id/r_18"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:buttonTint="@color/purple_500"
+                android:fontFamily="@font/open_sans"
+                android:text="@string/radioText4" />
+
+            <RadioButton
+                android:id="@+id/r_28"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:buttonTint="@color/purple_500"
+                android:fontFamily="@font/open_sans"
+                android:text="@string/radioText5" />
+
+        </RadioGroup>
+
+        <View
+            android:id="@+id/divider"
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:layout_marginStart="16dp"
+            android:layout_marginTop="16dp"
+            android:layout_marginEnd="16dp"
+            android:background="?android:attr/listDivider"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/taxOptions" />
+
+        <ImageView
+            android:id="@+id/imageView2"
+            android:layout_width="24dp"
+            android:layout_height="24dp"
+            android:layout_marginStart="16dp"
+            app:layout_constraintBottom_toBottomOf="@+id/inputPriceLayout"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="@+id/inputPriceLayout"
+            app:srcCompat="@drawable/ic_indian_rupee_symbol" />
+
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:id="@+id/inputPriceLayout"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="16dp"
+            android:layout_marginTop="16dp"
+            android:layout_marginEnd="16dp"
+            app:boxBackgroundColor="#00FFFFFF"
+            app:boxBackgroundMode="outline"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toEndOf="@+id/imageView2"
+            app:layout_constraintTop_toBottomOf="@+id/divider">
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/inputPriceText"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/open_sans"
+                android:hint="@string/inputPriceHint"
+                android:inputType="number" />
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <ImageView
+            android:id="@+id/imageView3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="16dp"
+            app:layout_constraintBottom_toBottomOf="@+id/calcButton"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="@+id/calcButton"
+            app:srcCompat="@drawable/ic_baseline_calculate_24" />
+
+        <Button
+            android:id="@+id/calcButton"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="16dp"
+            android:layout_marginTop="8dp"
+            android:layout_marginEnd="16dp"
+            android:fontFamily="@font/open_sans_semibold"
+            android:text="@string/calcButtonText"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toEndOf="@+id/imageView3"
+            app:layout_constraintTop_toBottomOf="@+id/inputPriceLayout" />
+
+        <View
+            android:id="@+id/divider2"
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:layout_marginStart="16dp"
+            android:layout_marginTop="16dp"
+            android:layout_marginEnd="16dp"
+            android:background="?android:attr/listDivider"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/calcButton" />
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            android:layout_marginBottom="16dp"
+            android:background="#DDDDDD"
+            android:orientation="vertical"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/divider2">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/grossPrice"
+                    android:layout_width="150sp"
+                    android:layout_height="75sp"
+                    android:layout_margin="10dp"
+                    android:layout_weight="1"
+                    android:background="#00A545"
+                    android:fontFamily="@font/open_sans"
+                    android:gravity="center"
+                    android:maxLines="3"
+                    android:text="@string/grossPriceTextPlaceHolder"
+                    android:textAlignment="center"
+                    android:textColor="#FFFFFF"
+                    tools:text="@string/grossPriceTextPlaceHolder" />
+
+                <TextView
+                    android:id="@+id/centralTax"
+                    android:layout_width="150sp"
+                    android:layout_height="75sp"
+                    android:layout_margin="10dp"
+                    android:layout_weight="1"
+                    android:background="#2196F3"
+                    android:fontFamily="@font/open_sans"
+                    android:gravity="center"
+                    android:maxLines="3"
+                    android:text="@string/cgstTextPlaceHolder"
+                    android:textAlignment="center"
+                    android:textColor="#FFFFFF"
+                    tools:text="@string/cgstTextPlaceHolder" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/totalTax"
+                    android:layout_width="150sp"
+                    android:layout_height="75sp"
+                    android:layout_margin="10dp"
+                    android:layout_weight="1"
+                    android:background="#4C4C4C"
+                    android:fontFamily="@font/open_sans"
+                    android:gravity="center"
+                    android:maxLines="3"
+                    android:text="@string/totalTaxTextPlaceHolder"
+                    android:textAlignment="center"
+                    android:textColor="#FFFFFF"
+                    tools:text="@string/totalTaxTextPlaceHolder" />
+
+                <TextView
+                    android:id="@+id/stateTax"
+                    android:layout_width="150sp"
+                    android:layout_height="75sp"
+                    android:layout_margin="10dp"
+                    android:layout_weight="1"
+                    android:background="#3F51B5"
+                    android:fontFamily="@font/open_sans"
+                    android:gravity="center"
+                    android:maxLines="3"
+                    android:text="@string/sgstTextPlaceholder"
+                    android:textAlignment="center"
+                    android:textColor="#FFFFFF"
+                    tools:text="@string/sgstTextPlaceholder" />
+            </LinearLayout>
+        </LinearLayout>
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+</ScrollView>
+
