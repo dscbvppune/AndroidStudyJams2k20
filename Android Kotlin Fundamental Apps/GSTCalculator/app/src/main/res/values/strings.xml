@@ -1,0 +1,22 @@
+<resources>
+    <string name="app_name">GST Calculator</string>
+
+    <string name="inputPriceHint">Enter Net Price</string>
+    <string name="taxCategory">Select Tax Category</string>
+    <string name="radioText1">Cut and semi-polished stones (0.25%)</string>
+    <string name="radioText2">Household Necessities, oil, sugar, tea, medicinal drugs (5%)</string>
+    <string name="radioText3">Electronic Items, Computers and processed food (12%)</string>
+    <string name="radioText4">Hair oil, toothpaste and soaps, capital goods, etc (18%)</string>
+    <string name="radioText5">Cars, Motorcycles, AC, Refrigerators, Cigarettes, etc (28%)</string>
+
+    <string name="grossPriceTextPlaceHolder">Gross Price\n\n</string>
+    <string name="cgstTextPlaceHolder">CGST Amount\n\n</string>
+    <string name="totalTaxTextPlaceHolder">Total Tax\n\n</string>
+    <string name="sgstTextPlaceholder">SGST Amount\n\n</string>
+
+    <string name="grossPriceText">Gross Price\n\n%s</string>
+    <string name="cgstText">CGST Amount\n\n%s</string>
+    <string name="totalTaxText">Total Tax\n\n%s</string>
+    <string name="sgstText">SGST Amount\n\n%s</string>
+    <string name="calcButtonText">Calculate Gross Price</string>
+</resources>
