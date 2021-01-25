@@ -1,0 +1,17 @@
+<resources>
+    <string name="app_name">AboutMe</string>
+    <string name="name">Abhishek</string>
+    <string name="avatar_desc">Avatar</string>
+    <string name="bio">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec bibendum mi vel diam bibendum commodo. Fusce volutpat luctus nisl, ac vehicula sem lacinia faucibus. Aliquam erat volutpat. In a vulputate eros. Maecenas consectetur elit, eu blandit urna varius a. Nunc eu eros at velit congue finibus. Sed ac lacus justo. Donec lobortis dui felis. Quisque tempus laoreet vulputate. Morbi sit amet pretium justo, eget sollicitudin tellus. Ut suscipit aliquam odio, id rhoncus metus lobortis eget. Integer in tellus a nunc semper porta. Nullam vel euismod lectus. Quisque risus ante, viverra sed mauris ut, blandit dapibus felis.
+
+Donec vehicula erat eget dignissim facilisis. Aliquam in tellus diam. Suspendisse commodo ligula sem, non venenatis ante ornare ac. Integer lobortis faucibus sem vehicula dignissim. Pellentesque lacinia faucibus elit, eget pharetra nisi scelerisque vitae. Donec ac blandit sem. Vestibulum aliquam est ligula. Praesent a iaculis magna.
+
+Pellentesque blandit tincidunt tristique. Aenean eleifend purus sit amet augue ultrices convallis. Quisque condimentum mi enim, in commodo quam condimentum eget. Duis ultrices risus urna. Quisque pretium id elit ac sollicitudin. Maecenas sed leo lectus. Vestibulum ac mi at libero accumsan varius. Sed eu tempor augue, eu fringilla erat. Sed venenatis velit sit amet tellus aliquam varius. Donec ac nisi in nulla venenatis tincidunt.
+
+Etiam ornare faucibus lorem, nec feugiat orci accumsan nec. Morbi volutpat commodo orci quis viverra. Vestibulum nec justo mollis, tristique ante at, dignissim nisi. Sed dictum nulla vitae nibh dapibus, vel imperdiet libero suscipit. Maecenas ut leo varius, dictum lectus quis, iaculis neque. Phasellus luctus sollicitudin semper. Nullam fermentum ante metus, ut mattis purus dapibus ac. Duis dignissim consequat efficitur. Nullam vestibulum turpis ac mi elementum volutpat. Ut gravida vel sapien a commodo. Fusce varius a ligula vulputate suscipit.
+
+Curabitur tempus in leo id tincidunt. Pellentesque non elit convallis risus mattis laoreet id justo. Maecenas pharetra nibh vel dolor sodales faucibus. Integer eleifend cursus enim quis vulputate. Pellentesque vitae odio ut dolor molestie commodo eu varius nisl. Aliquam vulputate eros malesuada consequat cursus. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Cras convallis venenatis dui ut vehicula. Curabitur eget mi et ipsum lobortis porta in quis urna.</string>
+    <string name="scrollable_image_desc">Scrollable Image</string>
+    <string name="what_is_your_nickname">What is your Nickname ?</string>
+    <string name="done">Done</string>
+</resources>
